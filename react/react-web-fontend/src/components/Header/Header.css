@@ -1,0 +1,88 @@
+.header{
+    width: 100%;
+    position: relative;
+}
+.video-container {
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+  }
+  
+  .video-container video {
+    height: auto;
+    width: 100%;
+    margin-top: -30px;
+    object-fit: cover; /* sẽ crop bớt nếu cần */
+  }
+
+  .header-content {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 700px;
+  }
+
+  .header-font{
+    color: red;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #1a1a1a;
+  }
+  
+  .btn-outline:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .btn-primary {
+    background-color: #1a2440;
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #11182c;
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

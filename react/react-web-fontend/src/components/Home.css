@@ -1,0 +1,10 @@
+.hero-section {
+    background: url('https://source.unsplash.com/1600x900/?finance,trade') no-repeat center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}

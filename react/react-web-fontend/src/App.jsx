@@ -13,7 +13,7 @@ function App() {
     <div className='container'>
       <Navbar/>
     <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/KCM-Trade-WEB/react/' element={<Home/>}/>
     </Routes>
     
     <footer className="bg-dark text-white text-center py-3">

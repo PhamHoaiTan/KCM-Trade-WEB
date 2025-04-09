@@ -27,10 +27,13 @@
   }
 
   .header-font{
-    color: red;
+    color:#1E2749;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeUp 1s ease forwards;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
   }
 
   .hero-title {
@@ -79,10 +82,39 @@
   .btn-primary:hover {
     background-color: #11182c;
   }
+  
 
+  /* content */
+  .header-font h1{
+    font-size: 40px;
+  }
+  .header-font p{
+    font-size: 25px;
+  }
   @keyframes fadeUp {
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
+  @media (max-width: 768px) {
+  .nav-buttons {
+    display: none;
+  }
+  .video-container{
+    display: none;
+  }
+  .header-content{
+    position: unset;
+    display: inline;
+  }
+  .header-content h1{
+    font-size: 24px;
+  }
+  .header{
+    width: 100%;
+  }
+  .header-font{
+    margin: 0;
+  }
+}

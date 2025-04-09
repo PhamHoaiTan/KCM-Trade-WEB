@@ -25,16 +25,10 @@ const RotatingText = () => {
   return (
     <div
       key={index}
-      style={{
-        color: "#1E2749",
-        textAlign: "center",
-        marginTop: "100px",
-        marginBottom: "40px"
-      }}
       className="header-font"
     >
-      <h1 style={{fontSize: "40px",  fontWeight: "bold" }}>{texts[index]}</h1>
-      <p style={{ fontSize: "24px" }}>{texts2[index]}</p>
+      <h1>{texts[index]}</h1>
+      <p>{texts2[index]}</p>
     </div>
   );
 };

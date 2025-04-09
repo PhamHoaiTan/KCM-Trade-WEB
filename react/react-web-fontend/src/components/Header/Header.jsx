@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import videoBg from "../../assets/videoBg.mp4";
 import "./Header.css";
 import RotatingText from "./RotatingText";

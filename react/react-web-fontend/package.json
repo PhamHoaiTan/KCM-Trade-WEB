@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://phamhoaitan.github.io/KCM-Trade-WEB/react",
+  "homepage": "https://phamhoaitan.github.io/KCM-Trade-WEB/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

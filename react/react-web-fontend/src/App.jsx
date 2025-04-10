@@ -5,6 +5,7 @@ import {  Route, Routes } from 'react-router-dom';
 import './App.css'
 import Home from './components/./Pages/Home';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,9 +17,7 @@ function App() {
       <Route path='/KCM-Trade-WEB/react/' element={<Home/>}/>
     </Routes>
     
-    <footer className="bg-dark text-white text-center py-3">
-        &copy; 2025 KCM Clone. All rights reserved.
-      </footer>
+   <Footer/>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </div>

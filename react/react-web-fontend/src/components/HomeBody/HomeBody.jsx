@@ -1,8 +1,10 @@
 import React from "react";
 import "./HomeBody.css";
 import RotatingContentBodyHome from "./RotatingContentBodyHome";
+import MarketData from "./Thumbnail-wrapper/MarketData";
 const HomeBody = () => {
   return (
+    <div>
     <section class="news-section">
       <div className="u-section-excellence-wrap">
         <div class="news-header">
@@ -71,8 +73,10 @@ const HomeBody = () => {
           </div>
         </div>
       </div>
-    
     </section>
+      <MarketData/>
+    </div>
+
   );
 };
 

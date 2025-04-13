@@ -16,7 +16,9 @@ const Navbar = () => {
       <nav className="navbar">
         {/* Logo Section */}
         <div className="logo-section">
+          <a href="/KCM-Trade-WEB/react/">
           <video src={videoLogo} loop muted autoPlay height={45} />
+          </a>
         </div>
 
         {/* Hamburger Icon (mobile) */}
@@ -36,13 +38,13 @@ const Navbar = () => {
           <li><a href="#">Trading</a></li>
           <li><a href="#">Partnership</a></li>
           <li><a href="#">Education</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/KCM-Trade-WEB/react/Contact">Contact</a></li>
         </ul>
 
         {/* Buttons & Language */}
         <div className="nav-buttons">
-          <button className="btn sign-in">Sign In</button>
-          <button className="btn open-account">Open Account</button>
+          <a className="btn sign-in" href="/KCM-Trade-WEB/react/Login">Sign In</a>
+          <a className="btn open-account">Open Account</a>
           <img src={iconBritain} alt="English" className="language-icon" />
         </div>
       </nav>

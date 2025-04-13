@@ -1,145 +1,200 @@
 .market-access {
-    background: #ffffff;
-    padding-top: 120px;
-    font-family: 'Segoe UI', sans-serif;
-    color: #1a1a1a;
-    margin-left: 91px;
-    margin-right: 91px;
-    display: grid;
-    grid-row-gap: 5rem;
+  background: #ffffff;
+  padding-top: 120px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+  margin-left: 91px;
+  margin-right: 91px;
+  display: grid;
+  grid-row-gap: 5rem;
+}
+
+.market-access h2 {
+  color: #1E2749;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 36px;
+}
+
+.content-container {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.left-graphic {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.left-graphic img {
+  width: 100%;
+  height: 100%;
+}
+
+.right-content {
+  display: flex;
+  grid-row-gap: 0.4rem;
+  flex-flow: column;
+  width: 100%;
+  max-width: 600px;
+  color: var(--vampire-black);
+}
+
+.right-content h3 {
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.right-content p {
+  font-size: 1rem;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1.75em;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.market-tags {
+  margin: 20px 0;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.market-tags .btn {
+  margin: 5px;
+  padding: 10px 40px;
+  width: 178px;
+  height: 50px;
+  border-radius: 100px;
+  border: 1px solid black;
+  color: var(--primary-2);
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  font-weight: 400;
+  justify-content: center;
+}
+
+.market-tags-icon {
+  width: 18px;
+}
+
+.btnEnergy .market-tags-icon {
+  width: 14px;
+}
+
+.market-tags button:hover {
+  background-color: gold;
+  border-color: #2a4fff;
+}
+
+.footer-note {
+  font-size: 13px;
+  margin-top: 20px;
+  color: #333;
+}
+
+
+/* tinker wrapper */
+.ticker-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.ticker-content {
+  display: inline-flex;
+  animation: scroll 40s linear infinite;
+}
+
+.ticker-item {
+  flex: 0 0 auto;
+  padding: 0 10px;
+}
+
+.card {
+  width: 370px;
+  height: 180px;
+  background-image: linear-gradient(135deg, #f9f8ed, #f4f6f4 37%, #eff1f2 57%, #d7e5f8 91%, #d1e2f9);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap column;
+}
+
+.tiker-item-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.tiker-item-top-left{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-direction: row;
+  align-items: center;
+}
+.tiker-item-top .img-icon{
+  width: 50px;
+}
+/* bot */
+.tinker-item-bot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.tinker-item-bot-price{
+  width: 100px;
+  color: #B1BBC8;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+.tinker-item-bot-price .price{
+    color: black;
+    font-weight: 500;
+}
+.tinker-item-bot-price .text p{
+  width: 20px;
+  line-height: 1.3em;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
   }
-  .market-access h2{
-    color: #0d0f1c;
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 36px;
+
+  100% {
+    transform: translateX(-50%);
   }
-  .content-container {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr;
-    gap:40px;
-    align-items: center;
-  }
-  .left-graphic{
-    height: 100%;
-    width: 50%;
-    margin: 0 auto;
-  }
-  .left-graphic img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .right-content {
-    display: flex;
-    grid-row-gap: 0.4rem;
-    flex-flow: column;
-    width: 100%;
-    max-width: 600px;
-    color: var(--vampire-black);
-  }
-  
-  .right-content h3 {
-    font-size: 1.375rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  .right-content p{
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.75em;
-  }
-  .sub-title {
-    font-size: 18px;
-    font-weight: 600;
-  }
-  
-  .description {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .market-tags {
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    grid-row-gap: 20px;
-    flex-direction: row;
-  }
-  
-  .market-tags button {
-    margin: 5px;
-    padding: 10px 2rem;
-    border-radius: 100px;
-    border: 1px solid black;
-    color: var(--primary-2);
-    background: white;
-    cursor: pointer;
-    font-size: 14px;
-    transition: all 0.2s ease;
-  }
-  
-  .market-tags button:hover {
-    background-color: #e9f0ff;
-    border-color: #2a4fff;
-  }
-  
-  .footer-note {
-    font-size: 13px;
-    margin-top: 20px;
-    color: #333;
-  }
-  
-  .market-cards {
-    margin-top: 50px;
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 10px 0;
-  }
-  
-  .card {
-    min-width: 160px;
-    background: linear-gradient(to right, #f8fcff, #f0f8ff);
-    border-radius: 12px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    margin-bottom: 8px;
-  }
-  
-  .card p {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .value {
-    color: green;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  
-  .prices {
-    font-size: 12px;
-    color: #777;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-  }
+}
